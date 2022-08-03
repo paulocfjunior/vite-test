@@ -8,4 +8,4 @@ services:
       - "3000:3000"
     volumes:
       - ./app/:/var/www/html/app
-    entrypoint: ["bash", "-c", "npm ci && npm run start"]
+    entrypoint: ["bash", "-c", "npm ci && npm run dev"]
