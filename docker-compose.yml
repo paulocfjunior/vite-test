@@ -1,0 +1,12 @@
+version: "3.4"
+services:
+  vite_test:
+    container_name: vite_test
+    image: node:lts
+    working_dir: /var/www/html/app/
+    entrypoint: /bin/bash
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./dist/:/var/www/html/app
+    tty: true
